@@ -11,9 +11,8 @@ app.post('/', function(req, res) {
     response = "This is a sample response from your webhook!" //Default response from the webhook to show it's working
     console.log('Got POST request');
     res.setHeader('Content-Type', 'application/json'); //Requires application/json MIME type
-    res.send(JSON.stringify({ "speech": response, "displayText": response 
-      //  "speech" is the spoken version of the response, "displayText" is the visual version
-  }));
+    // "speech" is the spoken version of the response, "displayText" is the visual version
+    res.send(JSON.stringify({ "speech": response, "displayText": response }));
 });
          
 // start the server
