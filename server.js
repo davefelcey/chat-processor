@@ -14,7 +14,7 @@ app.post('/', function(req, res) {
     res.send(JSON.stringify({ "speech": response, "displayText": response 
       //  "speech" is the spoken version of the response, "displayText" is the visual version
   }));
-}
+});
          
 // start the server
 app.listen(port);
